@@ -164,10 +164,31 @@ header li>a{
 .column3{
     float: left;
     width: calc(100% / 3);
-    /* DEBUG:  */
-    height: 500px;
-    background-color: red;
-    border: 1px solid black;
+    text-align: center;
+}
+
+.column3 img{
+    width: 200px;
+    margin-top: 40px;
+}
+
+.column3 div:nth-child(2){
+    margin: 0 40px;
+}
+
+.column3-text h5, .column3-text p{
+    line-height: 25px;
+    padding: 40px 0;
+}
+
+.column3-text h5{
+    font-size: 30px;
+    color: #00bb2d;
+    border-bottom: 1px solid black;
+}
+
+.column3-text p{
+    color: gray;
 }
 
 
