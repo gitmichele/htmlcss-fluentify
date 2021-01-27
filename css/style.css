@@ -27,7 +27,7 @@ body{
 header{
     font-weight: 700;
     width: 100%;
-    background-color: #000066 ;
+    background-color: #000066;
     height: 100px;
 }
 
@@ -75,7 +75,7 @@ header li>a{
     padding: 10px 30px;
 }
 
-.login li:last-child a{
+.green-button{
     border-radius: 5px;
     padding: 10px 10px;
     background-color: #00bb2d;
@@ -85,23 +85,43 @@ header li>a{
 
 
 
-
-
 /* jumbotron */
 .jumbotron{
     width: 100%;
-    /* DEBUG:  */
-    height: 400px;
-    background-color: lightblue;
+    height: 600px;
+    background-color: #000066;
+    background-image: url(../img/background-header.png);
+    background-size: 65%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 .jumbotron .container{
+    position: relative;
     /* DEBUG:  */
-    border: 1px solid black;
     height: 100%;
 }
 
+.jumbo-text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
 
+.jumbo-text h1{
+    width: 60%;
+    font-weight: 700;
+    color: white;
+    font-size: 70px;
+    margin-bottom: 60px;
+}
+
+.jumbo-text a{
+    color: white;
+    text-decoration: none;
+    padding: 30px 20px;
+}
 
 /* adv */
 .adv{
