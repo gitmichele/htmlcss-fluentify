@@ -175,32 +175,40 @@ header li>a{
 .column3:nth-child(2){
     margin: 0 40px;
 }
-
-.column3-text h5, .column3-text p{
-    line-height: 25px;
+/*
+.column3-text .sec-title, .column3-text .sec-par{
     padding-bottom: 40px;
-}
+} */
 
-.column3-text h5{
-    width: 90%;
-    margin: auto;
-    font-size: 30px;
+.sec-title{
+    line-height: 40px;
+    font-size: 35px;
     color: #00bb2d;
+    margin-bottom: 40px;
 }
 
-.column3-text p{
+.sec-par{
+    line-height: 25px;
     color: gray;
+    margin-bottom: 40px;
 }
 
-.column3-text h5:after {
+.column3-text .sec-title:after {
     content: "";
     display: block;
     margin: 0 auto;
     width: 20%;
     padding-top: 40px;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid lightgray;
 }
 
+main section:nth-child(2)::after{
+    content: "";
+    display: block;
+    margin: 0 -10%;
+    width: 120%;
+    border-bottom: 2px solid lightgray;
+}
 
 
 
@@ -209,10 +217,15 @@ header li>a{
 .column2{
     float: left;
     width: 50%;
-    /* DEBUG:  */
-    height: 500px;
-    background-color: green;
-    border: 1px solid black;
+    padding: 60px;
+}
+
+.column2 h5{
+    color: black;
+}
+
+.column2 a{
+    color: #000066;
 }
 
 
