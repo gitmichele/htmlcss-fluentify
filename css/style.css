@@ -163,33 +163,44 @@ header li>a{
 /* 3 column section */
 .column3{
     float: left;
-    width: calc(100% / 3);
+    width: calc((100% - 80px) / 3);
     text-align: center;
 }
 
 .column3 img{
-    width: 200px;
-    margin-top: 40px;
+    height: 250px;
+    margin: 40px;
 }
 
-.column3 div:nth-child(2){
+.column3:nth-child(2){
     margin: 0 40px;
 }
 
 .column3-text h5, .column3-text p{
     line-height: 25px;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 .column3-text h5{
+    width: 90%;
+    margin: auto;
     font-size: 30px;
     color: #00bb2d;
-    border-bottom: 1px solid black;
 }
 
 .column3-text p{
     color: gray;
 }
+
+.column3-text h5:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 40px;
+    border-bottom: 1px solid gray;
+}
+
 
 
 
